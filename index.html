@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAP Idea Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="main">
+        <h1 class="title">
+            SAP Idea Generator
+        </h1>
+        <div class="options">
+            <label class="option">
+                <input type="radio" name="type" id="option" value="animal" checked="checked" >
+                Animal  
+            </label>
+            <br>
+            <label class="option">
+                <input type="radio" name="type" value="food">
+                Food
+            </label>
+        </div>
+        <label class="name">
+            Name: 
+            <input type="text" name="name" id="name">
+        </label>
+        <br> <br>
+        <label class="tier">
+            Tier: 
+            <input type="number" name="tier" min="1" max="6" id="tier">
+        </label>
+        <br> <br>
+        <label class="stat">
+            ⚔️
+            <input type="text" name="attack" id="attack">
+        </label>
+        <label class="stat">
+            ❤️
+            <input type="text" name="health" id="health">
+        </label>
+        <br><br>
+        <label class="trigger">
+            Ability Trigger: 
+            <input type="text" name="trigger" id="trigger">
+        </label>
+        <br> <br>
+        <label class="description">
+            Ability Description: <br>
+            <textarea name="description" id="description"></textarea>
+        </label>
+        <button type="button" onclick="addText(' ⚔️ ')"> ⚔️ </button>
+        <button type="button" onclick="addText(' ❤️ ')"> ❤️ </button>
+        <button type="button" onclick="addText(' 🪨 ')"> 🪨 </button> 
+        <script>
+            function addText(emoji) {
+                document.getElementById("description").focus(); 
+                document.getElementById("description").value += emoji;
+            }
+        </script>
+        <br><br>
+        <span style="font-size: 3vh;">Pet Icon</span> <br>
+        <label class="image">
+            Paste emoji:
+            <input type="text" name="image" id="image">
+        </label>
+        <div class="options">
+            <label class="option">
+                <input type="radio" name="emoji-type" id="font" value="google">
+                Noto Emoji  
+            </label>
+            <br>
+            <label class="option">
+                <input type="radio" name="emoji-type" value="twitter" checked="checked">
+                <a href="https://twemoji-cheatsheet.vercel.app/" target="_blank" style="color:white">Twemoji</a>
+            </label>
+        </div>
+        <!-- or upload image: <input type="file" id="loader" name="loader"> -->
+    </div>
+    <div style="width:auto; height:100%">
+        <canvas id="canvas" width="597px" height="703px" style="border:1px solid #d3d3d3;"></canvas>
+        <div style="width: min(35vw,45vh); padding: 1vh">
+            <p style="color:gray; font-size: 1.5vh; margin:0">If these (⚔️ ❤️) look like your system emojis and not sap icons, please try using chrome or edge.</p>
+        </div> 
+    </div>
+    
+</body>
+</html>
