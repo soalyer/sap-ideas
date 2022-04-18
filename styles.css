@@ -1,40 +1,40 @@
 @font-face {
     font-family: "sap-font";
-    src:url("/fonts/LapsusPro-Bold.otf");
+    src:url("fonts/LapsusPro-Bold.otf");
 }
 
 @font-face {
     font-family: "desc-font";  
-    src:url("/fonts/KOMTXT__.ttf");
+    src:url("fonts/KOMTXT__.ttf");
     unicode-range: U+003A-00FF;
 }
 
 @font-face {
     font-family: "desc-font";  
-    src:url("/fonts/LapsusPro-Bold.otf");
+    src:url("fonts/LapsusPro-Bold.otf");
     unicode-range: U+0030-0039;
 }
 
 @font-face {
     font-family: "desc-font";  
-    src:url("/fonts/sap-icons.ttf");
+    src:url("fonts/sap-icons.ttf");
     unicode-range: U+1FAA8, U+2694, U+2764;
 }
 
 @font-face {
     font-family: "sap-icons";  
-    src:url("/fonts/sap-icons.ttf");
+    src:url("fonts/sap-icons.ttf");
     unicode-range: U+1FAA8, U+2694, U+2764;
 }
 
 @font-face {
     font-family: "noto";  
-    src:url("/fonts/NotoColorEmoji.ttf");
+    src:url("fonts/NotoColorEmoji.ttf");
 }
 
 @font-face {
     font-family: "twemoji";  
-    src:url("/fonts/TwitterColorEmoji.ttf");
+    src:url("fonts/TwitterColorEmoji.ttf");
 }
 
 
